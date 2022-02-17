@@ -41,5 +41,19 @@
 
 - routing refers to how the app can respond to client requests based on an endpoint (_http method, uri(path)_)
 - Route definutuin is structured like: **app.httpMETHOD('PATH(uri)', 'HANDLER(function)')**
+
+## 3.1. Basic Route Methids
+
 - The basic http methods we can use are: _post, get, put, delete === creaate, read, update, delete_
 - **Note:** to make a post request: we need to use a middleware('express.json') to be able to allow the user to send data in json format
+
+## 3.2. Other Route Methods
+
+- _all: it is like any other route method but it accecpts all http method calls(post, get, update, delete)_
+
+- _app.disable("name"): is use to disable a property from the app settings table. Example_
+- _app.enable("name"): is use to enable a property from the app settings table. Example_
+- _app.enabled("name"): returns true or false based on the parameter passed._
+- _app.disabled("name"): returns true or false based on the parameter passed._
+
+**App Settings table link: _https://expressjs.com/en/4x/api.html#app.settings.table_**
