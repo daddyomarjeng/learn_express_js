@@ -55,5 +55,12 @@
 - _app.enable("name"): is use to enable a property from the app settings table. Example_
 - _app.enabled("name"): returns true or false based on the parameter passed._
 - _app.disabled("name"): returns true or false based on the parameter passed._
+- **Note:** _the route can take multiple callback functions, but you will have to use the next() to be able to move to the next function, or else it will stop at the first function_
 
 **App Settings table link: _https://expressjs.com/en/4x/api.html#app.settings.table_**
+_Checkout docs for more methods_
+
+## 3.3. Route Paths
+
+- These can be strings, string patterns, or regular expressions.
+- Checkout documentation for more: **https://expressjs.com/en/guide/routing.html**

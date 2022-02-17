@@ -37,10 +37,17 @@ app.delete("/posts/:id", (req, res) => {
 });
 
 // @route ALL /tester
-app.all("/tester", (req, res) => {
-  console.log("In Secret route");
-  res.send("You accessed the secret route");
-});
+app.all(
+  "/tester",
+  (req, res, next) => {
+    console.log("In Secret route");
+    // res.send("You accessed the secret route");
+    next();
+  },
+  (req, res) => {
+    res.status(200).json({ route: "Secret" });
+  }
+);
 //you can have something like below here for auth:
 // app.all("*", requireAuthentication);
 // app.all("*", loadUser);
