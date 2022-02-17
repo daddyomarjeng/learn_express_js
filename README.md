@@ -36,3 +36,10 @@
   - "start": "node index.js",
   - "server": "nodemon index.js"
 - To run them now we use: 'npm run start' instead of 'node index.js'
+
+# 3. Routing
+
+- routing refers to how the app can respond to client requests based on an endpoint (_http method, uri(path)_)
+- Route definutuin is structured like: **app.httpMETHOD('PATH(uri)', 'HANDLER(function)')**
+- The basic http methods we can use are: _post, get, put, delete === creaate, read, update, delete_
+- **Note:** to make a post request: we need to use a middleware('express.json') to be able to allow the user to send data in json format
