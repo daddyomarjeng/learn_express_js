@@ -1,0 +1,27 @@
+{
+  "name": "learn_express_js",
+  "version": "1.0.0",
+  "description": "Learning Express Js, by Daddy Omar Jeng(DOJ). I am learning Express JS from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-DOJ-gam:DOJ-gam/learn_express_js.git"
+  },
+  "keywords": [
+    "doj",
+    "daddy",
+    "omar",
+    "jeng",
+    "express",
+    "learning",
+    "express"
+  ],
+  "author": "DOJ - Daddy Omar Jeng",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
