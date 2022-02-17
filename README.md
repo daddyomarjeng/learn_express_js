@@ -35,4 +35,4 @@
 - We can use the node script object to add shortcuts for riunning scripts:
   - "start": "node index.js",
   - "server": "nodemon index.js"
-- To run them now we use: 'nom run start' instead of 'node index.js'
+- To run them now we use: 'npm run start' instead of 'node index.js'
