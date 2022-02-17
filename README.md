@@ -64,3 +64,11 @@ _Checkout docs for more methods_
 
 - These can be strings, string patterns, or regular expressions.
 - Checkout documentation for more: **https://expressjs.com/en/guide/routing.html**
+
+## 3.4. Response Methods
+
+- these are methods in the response object.
+  - _res.download() - Prompt a file to be downloaded._
+  - _res.end() - End the response process._
+  - _res.json() - Send a JSON response_
+  - _Also we have the redirect, sens, sendStatus, render(render aview), etc.., check documentation_
