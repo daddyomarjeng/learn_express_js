@@ -48,9 +48,9 @@ app.all(
     res.status(200).json({ route: "Secret" });
   }
 );
-//you can have something like below here for auth:
-// app.all("*", requireAuthentication);
-// app.all("*", loadUser);
+
+const users = require("./userController");
+app.use("/users", users);
 
 app.listen(port, () => {
   console.log(`App running on http://localhost:${port}`);
