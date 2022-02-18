@@ -78,3 +78,16 @@ _Checkout docs for more methods_
 - We can use the express router class to create modular, and mountable route handlers(controllers).
 - You can create a router as a module and export it for use in another file.
 - you can create middlewares specific just to that router(eg _'/user'_)
+
+# 4. Serving Static Files
+
+- Tt serves static files like: _images, css, and js files,_ we use _express.static_
+  - it is a built-in middleware function in Express. The function is like:
+    - express.static(root, [options])
+    - the _root_ arguement specifies the root directory from which to serve static assets
+    - the options is a function that takes that returns an object of values like:
+      - _dotfiles_: how files or directories that start with dot are handles
+        - possible values for this option: _allow, deny=(403 response), ignore=(404 response)_
+      - _setHeaders_, _redirects_, etc...
+- The function determines the file to serve by combining _req.url_ with the provided _root directory_
+  - When file is not found, instead of sending _404 response_ it instead calls _next()_ to move to next middleware

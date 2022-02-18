@@ -49,8 +49,12 @@ app.all(
   }
 );
 
+// Express Router
 const users = require("./userController");
 app.use("/users", users);
+
+// Statatic files
+app.use(express.static("public"), () => {});
 
 app.listen(port, () => {
   console.log(`App running on http://localhost:${port}`);
