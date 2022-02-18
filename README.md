@@ -72,3 +72,9 @@ _Checkout docs for more methods_
   - _res.end() - End the response process._
   - _res.json() - Send a JSON response_
   - _Also we have the redirect, sens, sendStatus, render(render aview), etc.., check documentation_
+
+## Express Router Class
+
+- We can use the express router class to create modular, and mountable route handlers(controllers).
+- You can create a router as a module and export it for use in another file.
+- you can create middlewares specific just to that router(eg _'/user'_)
