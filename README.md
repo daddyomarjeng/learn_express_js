@@ -81,7 +81,7 @@ _Checkout docs for more methods_
 
 # 4. Serving Static Files
 
-- Tt serves static files like: _images, css, and js files,_ we use _express.static_
+- It serves static files like: _images, css, and js files,_ we use _express.static_
   - it is a built-in middleware function in Express. The function is like:
     - express.static(root, [options])
     - the _root_ arguement specifies the root directory from which to serve static assets
@@ -91,3 +91,5 @@ _Checkout docs for more methods_
       - _setHeaders_, _redirects_, etc...
 - The function determines the file to serve by combining _req.url_ with the provided _root directory_
   - When file is not found, instead of sending _404 response_ it instead calls _next()_ to move to next middleware
+- You can add multiple static asset directories and call the _express.static()_ middleware function multiple times.
+- Express will look for the files in the order you set them with the express.static middleware
